@@ -1,21 +1,21 @@
-//require the library
+// Require the library
 const mongoose = require("mongoose");
-require("dotenv").config();
 
-const mongodbUrl = process.env.MONGODB_URL;
+// MongoDB URI (replace with your actual MongoDB URI)
+const mongodbUrl = "mongodb://127.0.0.1:27017/issue_tracker_latest";
 
-//connect to the database
-mongoose.connect(mongodbUrl);
+// Connect to the database
+mongoose.connect(mongodbUrl, { useNewUrlParser: true, useUnifiedTopology: true });
 
-//acquire the connection(to check if it's successful)
+// Acquire the connection (to check if it's successful)
 const db = mongoose.connection;
 
-//error
+// Error
 db.on("error", function (err) {
   console.log(err.message);
 });
 
-//up and running then print the message
+// Up and running, then print the message
 db.once("open", function () {
   console.log("Successfully connected to the database");
 });
