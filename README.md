@@ -1,5 +1,7 @@
 The website is live on: https://issuetracker-on46.onrender.com/
 
+http://localhost:8080/
+
 # issueTracker
 This is an Issue Tracker App which is for creating a project and details about the Issue or Bugs of the project.
 
