@@ -1,0 +1,64 @@
+/* Styles for header and navigation */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+.nav-left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+#home-button {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Styles for project list */
+.project-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.project-list li {
+    margin-bottom: 20px;
+}
+
+.project-title {
+    font-weight: bold;
+}
+
+.project-author {
+    font-style: italic;
+}
+
+.project-description {
+    font-size: 14px;
+}
+
+.view-project-button {
+    background-color: #007acc;
+    color: #fff;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.view-project-button:hover {
+    background-color: #005b9f;
+}
+
+/* Styles for footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
